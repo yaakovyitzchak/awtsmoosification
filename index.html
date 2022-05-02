@@ -1,0 +1,48 @@
+B"H
+<Br>
+  Welcome to the Awtsmoos [Essence of the Creator].
+  
+ <br>
+  <u>Posts:</u>
+  <br>
+  <div id="pst">
+    You need  to activate JavaScript to see this!!
+  </div>
+  <style>
+    .mawl{
+     user-select:none;
+      padding:3px;
+      border:1px solid black;
+      display:block;
+      fon-size:63px;
+    }
+    .mawl:hover{
+      background:rgba(0.3,0.3,0.3,1);
+      cursor:pointer;
+    }
+    
+    
+    .mawl:hover{
+      background:background;
+      color:white;
+    }
+  </style>
+  <script>
+    pst.innerHTML="";
+    var posts=[
+      {nm:"28th Nissan, revelations of the ingathering of the exiles",url:"https://firebasestorage.googleapis.com/v0/b/awtsmoos-5c82d.appspot.com/o/m.html?alt=media"}  
+    ]
+    
+    var i
+    var qw
+    for(i=0;i<posts.length;i++){
+      (function(k){
+        var qw=document.createElement("div")
+        qw.className="mawl"
+        qw.innerHTML=k.nm;
+        qw.onclick=function(){
+          open(k.url)
+        }
+      })(posts[i]);
+    }
+  </script>
